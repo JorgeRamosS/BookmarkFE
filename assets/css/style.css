@@ -85,12 +85,15 @@ img {
 
 .button {
   padding: 0.8em;
-  background-color: var(--bright-blue);
-  border: none;
+  background-color: #fff;
+  color: var(--soft-red);
+  border: 2px solid var(--soft-red);
   border-radius: 5px;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: var(--bright-blue-hover);
+  background-color: var(--soft-red);
+  color: #fff;
+  border: none;
 }
