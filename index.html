@@ -23,13 +23,34 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__columnas">
-          <a href="#" class="header__logo">
-            <img src="images/logo-bookmark-w.svg" alt="Logo IMG" />
-          </a>
+        <div class="header__nav-c">
           <a href="#" class="header__logo-b">
             <img src="images/logo-bookmark.svg" alt="Logo IMG" />
           </a>
+
+          <a href="#" class="header__logo-c">
+            <img
+              src="images/icon-hamburger.svg"
+              alt=""
+              class="header__close-h"
+              id="nav-toggle"
+            />
+          </a>
+        </div>
+        <div class="header__columnas" id="nav-menu">
+          <div class="header__nav">
+            <a href="#" class="header__logo">
+              <img src="images/logo-bookmark-w.svg" alt="Logo IMG" />
+            </a>
+            <a href="#" class="header__logo-d">
+              <img
+                src="images/icon-close.svg"
+                alt=""
+                class="header__close-c"
+                id="nav-close"
+              />
+            </a>
+          </div>
           <nav class="navigation">
             <ul class="navigation__list">
               <li class="navigation__links">
@@ -44,6 +65,14 @@
               <button class="navigation__button button-nav">Login</button>
             </ul>
           </nav>
+          <div class="header__socials">
+            <a href="#" class="header__social"
+              ><i class="bx bxl-facebook-square"></i
+            ></a>
+            <a href="#" class="header__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
         </div>
       </div>
     </header>
