@@ -7,6 +7,7 @@
   --soft-red: hsl(0, 94%, 66%);
   --grayish-blue: hsl(229, 8%, 60%);
   --very-dark-blue: hsl(229, 31%, 21%);
+  --very-dark-blue-o: hsl(229, 31%, 21%, 0.8);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -131,4 +132,76 @@ img {
   background-color: #fff;
   color: var(--soft-blue);
   border: 2px solid var(--soft-blue);
+}
+
+.button-nav {
+  padding: 0.8em;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-nav:hover {
+  background-color: hsl(229, 31%, 21%, 0.5);
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Header */
+
+.header__columnas {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: var(--very-dark-blue-o);
+  backdrop-filter: blur(10px);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: right 0.3s;
+}
+
+.header__logo {
+  padding: 2em;
+}
+
+.header__logo-b {
+  display: none;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: var(--big-font-size);
+}
+
+.navigation__links {
+  border-top: 1px solid gray;
+  padding: 1rem;
+  width: 80%;
+}
+
+.navigation__links a {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation__links:last-of-type {
+  border-bottom: 1px solid grey;
+  padding: 1rem;
+  width: 80%;
+}
+
+.navigation__button {
+  margin-top: 2rem;
+  width: 80%;
 }
