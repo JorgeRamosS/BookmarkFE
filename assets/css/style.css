@@ -170,10 +170,6 @@ img {
   padding: 2em;
 }
 
-.header__logo-b {
-  display: block;
-}
-
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -234,18 +230,12 @@ img {
   column-gap: 2rem;
 }
 
-.bxl-facebook-square {
-  color: #fff;
-}
-
-.bxl-facebook-square:hover {
-  color: var(--soft-red);
-}
-
+.bxl-facebook-square,
 .bxl-twitter {
   color: #fff;
 }
 
+.bxl-facebook-square:hover,
 .bxl-twitter:hover {
   color: var(--soft-red);
 }
