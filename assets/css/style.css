@@ -290,9 +290,14 @@ img {
   font-weight: var(--font-regular);
   color: grey;
   padding-block: 0.5em;
-  border-top: 2px solid rgb(192, 192, 192);
+  /* border-top: 2px solid rgb(192, 192, 192); */
   border-bottom: 2px solid rgb(192, 192, 192);
   cursor: pointer;
+}
+
+.features__accordion-tab:hover {
+  color: red;
+  border-bottom: 3px solid red;
 }
 
 .features__title,
@@ -315,4 +320,9 @@ img {
   overflow: hidden;
   height: 0;
   transition: all 0.25s ease;
+}
+
+.active {
+  color: red;
+  border-bottom: 3px solid red;
 }
