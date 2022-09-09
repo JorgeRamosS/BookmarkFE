@@ -331,11 +331,13 @@ img {
   text-align: center;
 }
 
-.download__title {
+.download__title,
+.faq__title {
   font-size: 1.5rem;
 }
 
-.download__description {
+.download__description,
+.faq__description {
   font-size: 1rem;
   color: grey;
   padding-top: 1rem;
@@ -384,3 +386,35 @@ img {
 }
 
 /* FAQ */
+
+.faq__columnas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.faq__accordion-tab {
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  padding-block: 0.5em;
+}
+
+.faq__accordion-description {
+  font-size: 1rem;
+  color: grey;
+  padding-block: 2.5rem;
+}
+
+.bx-chevron-down {
+  font-size: 2rem;
+  color: var(--soft-blue);
+}
+
+.faq__accordion-button {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
