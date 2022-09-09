@@ -343,7 +343,12 @@ img {
 }
 
 .download__group {
-  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  margin-inline: auto;
+  padding: 3em 1em;
   border-radius: 10px;
   margin-bottom: 3rem;
   box-shadow: 0px 0px 10px 5px rgba(202, 202, 202, 0.75);
@@ -377,3 +382,5 @@ img {
   font-size: 1rem;
   margin-top: 1rem;
 }
+
+/* FAQ */
