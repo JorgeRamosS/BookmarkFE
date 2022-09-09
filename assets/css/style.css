@@ -387,6 +387,11 @@ img {
 
 /* FAQ */
 
+.faq__accordion-right {
+  display: flex;
+  flex-direction: column;
+}
+
 .faq__accordion-content {
   display: flex;
   flex-direction: column;
@@ -419,6 +424,8 @@ img {
 }
 
 .faq__accordion-button {
+  width: 50%;
+  margin-inline: auto;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
