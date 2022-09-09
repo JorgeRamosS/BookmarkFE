@@ -387,10 +387,13 @@ img {
 
 /* FAQ */
 
-.faq__columnas {
+.faq__accordion-content {
   display: flex;
   flex-direction: column;
   text-align: center;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.25s ease;
 }
 
 .faq__accordion-tab {
@@ -404,6 +407,7 @@ img {
 }
 
 .faq__accordion-description {
+  text-align: left;
   font-size: 1rem;
   color: grey;
   padding-block: 2.5rem;

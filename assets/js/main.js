@@ -50,3 +50,34 @@ const toggleItem = (item) => {
     item.classList.add("accordion-open");
   }
 };
+
+/*=============== FAQ ACCORDION ===============*/
+
+const accordionFaqItems = document.querySelectorAll(".faq__accordion-item");
+
+accordionFaqItems.forEach((item) => {
+  const accordionHeader = item.querySelector(".faq__accordion-header");
+
+  accordionHeader.addEventListener("click", () => {
+    const openItem = document.querySelector(".accordion-open");
+
+    toggleFaqItem(item);
+
+    if (openItem && openItem !== item) {
+      toggleFaqItem(openItem);
+    }
+  });
+});
+
+const toggleFaqItem = (item) => {
+  const accordionContent = item.querySelector(".faq__accordion-content");
+
+  if (item.classList.contains("accordion-open")) {
+    accordionContent.removeAttribute("style");
+    item.classList.remove("accordion-open");
+  } else {
+    accordionContent.style.height = accordionContent.scrollHeight + "px";
+
+    item.classList.add("accordion-open");
+  }
+};
