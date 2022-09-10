@@ -473,9 +473,59 @@ img {
 
 .contact__form-input {
   width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding-block: 1em;
+  font-size: 0.9rem;
+  padding-left: 1rem;
+  color: grey;
 }
 
 .contact__form-button {
   width: 100%;
   margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--very-dark-blue);
+  color: #fff;
+  padding-block: 2rem;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer__fila {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__logo {
+  width: 55%;
+  margin-inline: auto;
+}
+
+.navigation__footer-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  padding-block: 2rem;
+  text-transform: uppercase;
+}
+
+.footer__socials-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  font-size: 2rem;
+}
+
+.footer__info {
+  font-size: 0.825rem;
+  padding-top: 2rem;
 }
