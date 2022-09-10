@@ -83,3 +83,28 @@ const toggleFaqItem = (item) => {
     item.classList.add("accordion-open");
   }
 };
+
+/*=============== INPUT JS ===============*/
+
+const contactForm = document.getElementById("contact-form"),
+  contactMessage = document.getElementById("contact-message"),
+  contactUser = document.getElementById("contact-user");
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  if (contactUser.value === "") {
+    contactMessage.classList.add("color-red");
+    contactUser.classList.add("contact__form-inputred");
+
+    contactMessage.textContent = "Please check your email ☝️";
+
+    setTimeout(() => {
+      contactMessage.textContent = "";
+      contactMessage.classList.remove("color-red");
+      contactUser.classList.remove("contact__form-inputred");
+    }, 3000);
+  }
+};
+
+contactForm.addEventListener("submit", sendEmail);

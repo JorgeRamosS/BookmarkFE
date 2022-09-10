@@ -351,15 +351,20 @@
             <h2 class="contact__title">
               Stay up-to-date with what we’re doing
             </h2>
-            <form action="" class="contact__form">
+            <form action="" class="contact__form" id="contact-form">
               <input
                 type="email"
+                pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}"
                 name=""
-                id=""
+                id="contact-user"
                 class="contact__form-input"
                 placeholder="Enter your email adress"
               />
-              <label for="" class="contact__form-label"></label>
+              <div
+                for=""
+                class="contact__form-label"
+                id="contact-message"
+              ></div>
               <button class="contact__form-button button-red" type="submit">
                 Contact Us
               </button>

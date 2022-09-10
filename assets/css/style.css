@@ -474,7 +474,7 @@ img {
 .contact__form-input {
   width: 100%;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   padding-block: 1em;
   font-size: 0.9rem;
   padding-left: 1rem;
@@ -485,6 +485,18 @@ img {
   width: 100%;
   margin-top: 2rem;
   font-size: 0.9rem;
+}
+
+.color-red {
+  background-color: red;
+  color: #fff;
+  padding: 0.7em 2.3em;
+  border-radius: 0 0 5px 5px;
+  font-size: 1rem;
+}
+
+.contact__form-inputred {
+  border: 2px solid red;
 }
 
 /* FOOTER */
