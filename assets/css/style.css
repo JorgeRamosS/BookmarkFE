@@ -286,6 +286,18 @@ img {
   padding-block: 2rem;
 }
 
+.tabbg {
+  position: absolute;
+  height: 55vw;
+  background-color: hsl(231, 69%, 60%);
+  z-index: -1;
+  width: 150%;
+  border-radius: 20rem;
+  top: -8vw;
+  transform: translateY(60%);
+  left: 25%;
+}
+
 /* Features */
 
 .features__columnas {
@@ -337,6 +349,18 @@ img {
   transition: all 0.25s ease;
 }
 
+.ftabbg {
+  position: absolute;
+  height: 56vw;
+  background-color: hsl(231, 69%, 60%);
+  z-index: -1;
+  width: 150%;
+  border-radius: 20rem;
+  top: 190vw;
+  transform: translateY(60%);
+  right: 20%;
+}
+
 /* Download */
 
 .download__columnas {
@@ -363,7 +387,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 75%;
   margin-inline: auto;
   padding: 3em 1em;
   border-radius: 10px;
@@ -488,7 +512,7 @@ img {
 }
 
 .color-red {
-  background-color: red;
+  background-color: var(--soft-red);
   color: #fff;
   padding: 0.7em 2.3em;
   border-radius: 0 0 5px 5px;
@@ -496,7 +520,7 @@ img {
 }
 
 .contact__form-inputred {
-  border: 2px solid red;
+  border: 2px solid var(--soft-red);
 }
 
 /* FOOTER */

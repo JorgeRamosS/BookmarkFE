@@ -46,7 +46,6 @@ const toggleItem = (item) => {
     item.classList.remove("accordion-open");
   } else {
     accordionContent.style.height = accordionContent.scrollHeight + "px";
-
     item.classList.add("accordion-open");
   }
 };
