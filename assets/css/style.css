@@ -724,6 +724,14 @@ main {
     gap: 7rem;
   }
 
+  #group-mid {
+    margin-top: 1rem;
+  }
+
+  #group-bottom {
+    margin-top: 2rem;
+  }
+
   .faq__columnas {
     text-align: center;
   }
