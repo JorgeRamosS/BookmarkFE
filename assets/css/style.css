@@ -206,9 +206,11 @@ img {
 
 .header__close-h {
   display: block;
+  cursor: pointer;
 }
 
 .header__close-c {
+  cursor: pointer;
   padding: 2em;
 }
 
@@ -309,19 +311,11 @@ main {
   padding-block: 2rem;
 }
 
-/* .tabbg {
-  position: absolute;
-  height: 55vw;
-  background-color: hsl(231, 69%, 60%);
-  z-index: -1;
-  width: 150%;
-  border-radius: 20rem;
-  top: -8vw;
-  transform: translateY(60%);
-  left: 25%;
-} */
-
 /* Features */
+
+.features {
+  padding-top: 4rem;
+}
 
 .features__columnas {
   display: flex;
