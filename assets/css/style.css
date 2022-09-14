@@ -140,8 +140,8 @@ img {
 }
 
 .button-red:hover {
-  background-color: var(--soft-red);
-  color: #fff;
+  background-color: #fff;
+  color: var(--soft-red);
   border: 2px solid var(--soft-red);
 }
 
