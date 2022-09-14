@@ -82,7 +82,6 @@ accordionFaqItems.forEach((item) => {
 const toggleFaqItem = (item) => {
   const accordionContent = item.querySelector(".faq__accordion-content");
   const arrow = item.querySelector(".bx-chevron-down");
-  console.log(arrow);
   if (item.classList.contains("accordion-open")) {
     accordionContent.removeAttribute("style");
     arrow.removeAttribute("style");
