@@ -366,18 +366,6 @@ main {
   transition: all 0.25s ease;
 }
 
-.ftabbg {
-  position: absolute;
-  height: 56vw;
-  background-color: hsl(231, 69%, 60%);
-  z-index: -1;
-  width: 150%;
-  border-radius: 20rem;
-  top: 190vw;
-  transform: translateY(60%);
-  right: 20%;
-}
-
 /* Download */
 
 .download__columnas {
